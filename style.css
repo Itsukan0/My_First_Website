@@ -1,0 +1,26 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+}
+
+.white {
+    color:white
+}
+
+.blog_title {
+    color: lightgreen;
+    background-color: lightgray;
+    text-align: left;
+}
+
+.article-title {
+    text-align: justify;
+}
+
+form {
+    border-style: solid;
+    padding: 15px;
+}
