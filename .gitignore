@@ -14,4 +14,7 @@
 .history
 .ionide
 
+### Custom ignore ###
+ressources/*
+!ressources/.gitkeep
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
