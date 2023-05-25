@@ -1,11 +1,14 @@
 .line {
-    border: 1px solid black;
+    border: 1px dashed black;
+    text-align: center;
 }
 
 .square {
-    border: 1px solid black;    
+    border: 1px dashed black; 
+    text-align: center;   
 }
 
 .triangle {
-    border: 1px solid black;    
+    border: 1px dashed black;  
+    text-align: center;  
 }
