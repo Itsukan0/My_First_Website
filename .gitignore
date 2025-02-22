@@ -28,3 +28,7 @@ Thumbs.db       # Windows
 coverage/
 *.bak
 *.tmp
+
+# Ignorer les ressources locales
+ressources/*
+!/ressources/.gitkeep
