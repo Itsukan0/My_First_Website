@@ -1,0 +1,106 @@
+/*
+p {
+    
+    color: rebeccapurple;
+    font-size: large;
+}
+*/
+
+/* p {
+    color: rgba(128, 128, 128, 1);
+} */
+
+/* p {
+    color: #30edf2
+} */
+
+/* p {
+    font-size: 2em;
+} */
+
+/* p {
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* p {
+    font-weight: bold;
+    text-align: center;
+} */
+
+/* body section p {
+    text-align: center;
+} */
+
+/* * {
+    border: 2px solid black;
+} */
+
+/* .test_class{
+    border: 2px solid black;
+} */
+
+/* #Test_Section {
+    border: 2px solid black;
+} */
+
+/* a:link{
+    color: orange;
+}
+
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color: blueviolet;
+} */
+
+/* p:first-child{
+    border: 2px solid black;
+} */
+
+/* p{
+    display: inline-block;
+    width: 200px;
+} */
+
+/* div{
+    background-color: red;
+    width: 200px;
+    margin-top: 50px;
+    margin: 50px 20px 30px 40px;
+    margin: auto
+    border-style: solid;
+    border-width: 5px;
+    border: 10px solid green;
+    padding: 10px 15px 20px 25px;
+} 
+*/
+
+/* #Test_Section {
+    float: left;
+}
+
+#Test_Section_2 {
+    float: right;
+}
+
+header{
+    background-color: yellow;
+    clear: both;
+}
+
+footer{
+    background-color: grey;
+    clear: both;
+} */
+
+/* #Test_Section {
+    position: static;
+}
+
+#Test_Section_2 {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+} */
