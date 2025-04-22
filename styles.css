@@ -21,6 +21,16 @@ h2 {
     font-size: 55px;
 }
 
+h4 {
+    font-size: 24px;
+    color: #444;
+}
+
+p {
+    line-height: 20px;
+    color: #777;
+}
+
 ul {
     list-style: none;
 }
@@ -91,4 +101,42 @@ header nav ul li a{
     line-height: 50px;
     text-align: center;
     border-radius: 3px;
+}
+.button-1:hover{
+    background: blue;
+}
+
+/* Steps */
+
+#steps ul {
+    margin: 80px 0px;
+}
+
+#steps ul li {
+    width: 300px;
+    float: left;
+    padding-top: 140px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#steps h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#steps p {
+    margin-bottom: 20px;
+}
+
+#step_1 {
+    background: url("ressources/Pictures/steps-icon-1.png") no-repeat top center;
+}
+
+#step_2 {
+    background: url("ressources/Pictures/steps-icon-2.png") no-repeat top center;
+}
+
+#step_3 {
+    background: url("ressources/Pictures/steps-icon-3.png") no-repeat top center;
 }
