@@ -21,6 +21,11 @@ h2 {
     font-size: 55px;
 }
 
+h3 {
+    font-size: 30px;
+    color: #444;
+}
+
 h4 {
     font-size: 24px;
     color: #444;
@@ -201,4 +206,53 @@ article h4 {
 .button_2:hover {
     color: #fff;
     background-color: blue;
+}
+
+/* Contact */
+
+#contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h3 {
+    text-transform: uppercase;
+    margin: 0px auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid blue;
+    padding: 20px;
+}
+
+form {
+    margin: 60px 0px 20px 0px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #777
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+
+.button_3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 11px;
+    background-color: #02b8dd;
+    border-radius: 3px;
+    border-style: none;
+}
+
+.button_3:hover {
+    color: #fff;
+    background-color: #444;
 }
