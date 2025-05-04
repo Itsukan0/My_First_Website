@@ -7,3 +7,6 @@ We restart the basics videos of HTML and CSS
 
 ## First Project
 We will now craft a basic website with just HTML and CSS
+
+## Second Project
+We are now learning Javascript. Versionning will also start now, we establish the starting version at v0.1.0 as HTML and CSS were started
