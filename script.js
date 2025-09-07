@@ -7,6 +7,7 @@ window.onload = function () {
     var delay = 100;
     var snakey;
     var applee;
+    var score;
 
     init();
 
@@ -17,20 +18,22 @@ window.onload = function () {
         canvas.style.border = "1px solid";
         document.body.appendChild(canvas)
         ctx = canvas.getContext('2d');
-        snakey = new Snake([[6, 4], [5, 4], [4, 4]], "right")
-        applee = new Apple([10, 10]);
         widthInBlocks = canvasWidth/blockSize;
         heightInBlocks = canvasHeight/blockSize;
+        snakey = new Snake([[6, 4], [5, 4], [4, 4]], "right")
+        applee = new Apple([10, 10]);
+        score = 0;
         refreshCanvas();
     };
 
     function refreshCanvas() {
         snakey.advance();
         if(snakey.checkCollision()){
-
+            gameOver();
         }
         else{
             if(snakey.isEatingApple(applee)){
+                score++;
                 snakey.ateApple = true;
                 do{
                     applee.setNewPosition();
@@ -40,9 +43,30 @@ window.onload = function () {
             ctx.clearRect(0, 0, canvas.width, canvas.height)
             snakey.draw();
             applee.draw();
+            drawScore();
             setTimeout(refreshCanvas, delay);
         }
     };
+
+    function gameOver(){
+        ctx.save();
+        ctx.fillText("Game Over", 5, 15);
+        ctx.fillText("Press the Space button to replay", 5, 30);
+        ctx.restore();
+    }
+
+    function restart(){
+        snakey = new Snake([[6, 4], [5, 4], [4, 4]], "right")
+        applee = new Apple([10, 10]);
+        score = 0;
+        refreshCanvas();
+    }
+
+    function drawScore(){
+        ctx.save();
+        ctx.fillText(score.toString(), 5, canvasHeight-5);
+        ctx.restore();
+    }
 
     function drawBlock(ctx, position) {
         var x = position[0] * blockSize;
@@ -185,6 +209,9 @@ window.onload = function () {
         var key = e.keyCode;
         var newDirection;
         switch (key) {
+            case 32:
+                restart();
+                return;
             case 37:
                 newDirection = "left";
                 break;
