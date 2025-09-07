@@ -13,9 +13,12 @@ window.onload = function () {
 
     function init() {
         canvas = document.createElement('canvas');
+        canvas.style.display = "block";
         canvas.width = canvasWidth;
         canvas.height = canvasHeight;
-        canvas.style.border = "1px solid";
+        canvas.style.border = "30px solid gray";
+        canvas.style.margin = "50px auto";
+        canvas.style.backgroundColor = "#ddd"
         document.body.appendChild(canvas)
         ctx = canvas.getContext('2d');
         widthInBlocks = canvasWidth/blockSize;
@@ -50,8 +53,20 @@ window.onload = function () {
 
     function gameOver(){
         ctx.save();
-        ctx.fillText("Game Over", 5, 15);
-        ctx.fillText("Press the Space button to replay", 5, 30);
+        ctx.font = "bold 70px sans-serif";
+        ctx.fillStyle = "black";
+        ctx.textAlign = "center";
+        ctx.strokeStyle = "white";
+        ctx.lineWidth = 5;
+        var centerX = canvasWidth/2;
+        var centerY = canvasHeight/2;
+        ctx.textBaseline = "middle";
+        ctx.strokeText("Game Over", centerX, centerY - 180);
+        ctx.fillText("Game Over", centerX, centerY - 180);
+
+        ctx.font = "bold 30px sans-serif";
+        ctx.strokeText("Press the Space button to replay", centerX, centerY - 120);
+        ctx.fillText("Press the Space button to replay", centerX, centerY - 120);
         ctx.restore();
     }
 
@@ -64,7 +79,13 @@ window.onload = function () {
 
     function drawScore(){
         ctx.save();
-        ctx.fillText(score.toString(), 5, canvasHeight-5);
+        ctx.font = "bold 200px sans-serif";
+        ctx.fillStyle = "gray";
+        ctx.textAlign = "center";
+        var centerX = canvasWidth/2;
+        var centerY = canvasHeight/2;
+        ctx.textBaseline = "middle";
+        ctx.fillText(score.toString(), centerX, centerY);
         ctx.restore();
     }
 
